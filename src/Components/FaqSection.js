@@ -1,57 +1,65 @@
 import React from "react";
 import styled from "styled-components";
 import { About } from "../styles";
-
+import Toggle from "./Toggle";
 const FaqSection = () => {
   return (
     <Faq>
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <div className="question">
-        <h4>How Do I Start?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
-            qui!
-          </p>
+      <Toggle>
+        <div className="question">
+          <h4>How Do I Start?</h4>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
+              qui!
+            </p>
+          </div>
+          <div className="faq-line"></div>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Daily Schedule?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
-            qui!
-          </p>
+      </Toggle>
+      <Toggle>
+        <div className="question">
+          <h4>Daily Schedule?</h4>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
+              qui!
+            </p>
+          </div>
+          <div className="faq-line"></div>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Payment Mehtods</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
-            qui!
-          </p>
+      </Toggle>
+      <Toggle>
+        <div className="question">
+          <h4>Payment Mehtods</h4>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
+              qui!
+            </p>
+          </div>
+          <div className="faq-line"></div>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>What Products do you offer?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
-            qui!
-          </p>
+      </Toggle>
+      <Toggle>
+        <div className="question">
+          <h4>What Products do you offer?</h4>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
+              qui!
+            </p>
+          </div>
+          <div className="faq-line"></div>
         </div>
-        <div className="faq-line"></div>
-      </div>
+      </Toggle>
     </Faq>
   );
 };
@@ -75,6 +83,9 @@ const Faq = styled(About)`
   .question {
     padding: 3rem 0rem;
     cursor: pointer;
+    h4 {
+      font-size: 2rem;
+    }
   }
   .answer {
     padding: 2rem 0rem;
