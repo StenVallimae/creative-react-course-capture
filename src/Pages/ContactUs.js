@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+import styled from 'styled-components';
 
 const ContactUs = () => {
   return (
-    <motion.div
+    <Contact
       variants={pageAnimation}
       initial="hidden"
       animate="show"
@@ -12,8 +13,13 @@ const ContactUs = () => {
       style={{ background: "#fff" }}
     >
       <h1>Our Contact</h1>
-    </motion.div>
+    </Contact>
   );
 };
+
+const Contact = styled (motion.div)`
+
+`
+
 
 export default ContactUs;
