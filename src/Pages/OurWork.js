@@ -17,6 +17,7 @@ import {
   swoop
 } from "../animation";
 import {useScroll } from '../Components/useScroll'
+import ScrollTop from "../Components/scrollTop";
 
 
 const OurWork = () => {
@@ -61,6 +62,8 @@ const OurWork = () => {
           <img src={goodtimes} alt="Good times" />
         </Link>
       </Movie>
+      <ScrollTop />
+
     </Work>
   );
 };
