@@ -9,13 +9,11 @@ import MovieDetail from "./Pages/MovieDetails";
 import { Switch, Route, useLocation } from "react-router-dom";
 //animation
 import { AnimatePresence } from "framer-motion";
-import ScrollTop from './Components/scrollTop'
 function App() {
   const location = useLocation();
   return (
     <div className="App">
       <GlobalStyle />
-      <ScrollTop />
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
@@ -33,7 +31,6 @@ function App() {
           </Route>
         </Switch>
       </AnimatePresence>
-      
     </div>
   );
 }

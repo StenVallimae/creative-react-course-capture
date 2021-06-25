@@ -20,7 +20,6 @@ const AboutUs = () => {
       <ServicesSection />
       <FaqSection />
       <ScrollTop />
-
     </motion.div>
   );
 };

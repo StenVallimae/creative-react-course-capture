@@ -14,15 +14,14 @@ import {
   lineAnimation,
   slider,
   sliderContainer,
-  swoop
+  swoop,
 } from "../animation";
-import {useScroll } from '../Components/useScroll'
+import { useScroll } from "../Components/useScroll";
 import ScrollTop from "../Components/scrollTop";
 
-
 const OurWork = () => {
-  const [element, controls]=useScroll();
-  const [element2, controls2]=useScroll();
+  const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
 
   return (
     <Work
@@ -48,14 +47,24 @@ const OurWork = () => {
           </Hide>
         </Link>
       </Movie>
-      <Movie ref={element} variants={fade} animate={controls} initial={'hidden'}>
+      <Movie
+        ref={element}
+        variants={fade}
+        animate={controls}
+        initial={"hidden"}
+      >
         <h2>The Racer</h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/the-racer">
           <img src={theracer} alt="the racer" />
         </Link>
       </Movie>
-      <Movie ref={element2} variants ={fade} animate={controls2} initial={'hidden'}>
+      <Movie
+        ref={element2}
+        variants={fade}
+        animate={controls2}
+        initial={"hidden"}
+      >
         <h2>Good Times</h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/good-times">
@@ -63,7 +72,6 @@ const OurWork = () => {
         </Link>
       </Movie>
       <ScrollTop />
-
     </Work>
   );
 };
@@ -78,6 +86,9 @@ const Work = styled(motion.div)`
   padding: 5rem 10rem;
   h2 {
     padding: 1rem 0rem;
+  }
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
   }
 `;
 
